@@ -8,7 +8,7 @@ void setup()
 {
   size(500,500);
   background(back);
-  storm = new Snowflake [300];
+  storm = new Snowflake [50];
   for (int i=0; i<storm.length; i++)
   {
     storm[i] = new Snowflake();
@@ -45,7 +45,6 @@ class Snowflake
   void show()
   {
     fill(255);
-    //noStroke();
     stroke(0);
     ellipse(myX, myY, eSize,eSize);
   }
